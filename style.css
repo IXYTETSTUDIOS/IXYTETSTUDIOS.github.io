@@ -1,0 +1,201 @@
+body {
+            
+            background-image: url('img/Background.png'); 
+            
+            /* Чтобы картинка не повторялась «плиткой» */
+            background-repeat: no-repeat; 
+            
+            /* Растягиваем картинку на весь экран с сохранением пропорций */
+            background-size: cover; 
+            
+            /* Центрируем картинку на экране */
+            background-position: center; 
+            
+            
+        }
+
+/* Исправление ошибки с [100% ширины и высоты]*/ 
+
+.slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*SLIDERS*//*SLIDERS*//*SLIDERS*/
+
+/* PROJECTS "IMG" [SCRATCH]*/ 
+
+    .slider-container {
+    position: relative;
+     width: 500px;
+     max-width: 100%;
+     overflow: hidden; /* Важно: меняем hidden на visible, чтобы кнопка не обрезалась контейнером */
+     margin: 20px auto;
+     border-radius: 35px;
+     box-sizing: border-box;
+                            }
+
+                            
+        .slider {
+        display: flex;
+        transition: transform 0.4s ease-in-out;
+                            }
+
+
+        .slide {
+         min-width: 100%;
+         box-sizing: border-box;
+                            }
+
+
+        .slide img {
+         width: 100%;
+         display: block;
+                            }
+
+
+    button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 187, 1, 0.459);
+  color: white;
+  border: none;
+  padding: 50px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+                            }
+
+                button.prev { left: 10px; }
+                button.next { right: 10px; }
+
+/* PROJECTS "IMG" [YOUTUBE] */ 
+
+
+    .slider-container_2 {
+    position: relative;
+     width: 500px;
+     max-width: 100%;
+     overflow: hidden; /* Важно: меняем hidden на visible, чтобы кнопка не обрезалась контейнером */
+     margin: 20px auto;
+     border-radius: 35px;
+     box-sizing: border-box;
+                            }
+
+                            
+        .slider_2 {
+         display: flex;
+         transition: transform 0.4s ease-in-out;
+                            }
+
+
+        .slide_2 {
+         min-width: 100%;
+         box-sizing: border-box;
+                            }
+
+
+       .slide_2 img {
+         width: 100%;
+         display: block;
+                            }
+
+
+    button.prev_2, button.next_2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 50px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+                            }
+
+                button.prev_2 { left: 10px; }
+                button.next_2 { right: 10px; }
+
+
+                
+.slide iframe {
+width: 100%;
+aspect-ratio: 16/9;
+border: none;
+pointer-events: auto;
+} /* PROJECTS "VID" [YOUTUBE] */ 
+
+
+/* BUTTON CODE! *//* BUTTON CODE! *//* BUTTON CODE! */
+
+/* Scratch */
+
+    .scratchBTN {
+    background-color: rgb(255, 187, 0);
+
+transform: translateY(-10%);
+
+     color: #473308;
+     padding: 16px 32px;
+     font-size: 65px;
+     font-weight: bold;
+     border: none;
+     border-radius: 12px;
+     cursor: pointer;
+     transition: all 0.1s ease-in-out;
+
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+                                            }
+
+    .scratchBTN:hover {box-shadow:0 8px 16px 0 rgba(255, 254, 254, 0.6)}  /* Эффект объема */
+
+.scratchBTN:active {
+  box-shadow: 0 0px 0 rgb(65, 48, 2);/* Костиль для удаления тени после нажатия!*/
+  transform: translateY(3px); /* Смещение вниз при нажатии */
+}
+
+
+/* YouTube */
+
+    .youtubeBTN {
+    background-color: rgb(204, 4, 4);
+
+transform: translateY(-10%);
+
+    color: #fffefb;
+    padding: 16px 32px;
+    font-size: 65px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+                                            }
+
+    .youtubeBTN:hover {box-shadow:0 8px 16px 0 rgba(255, 255, 255, 0.6)}  /* Эффект объема */
+
+.youtubeBTN:active {
+  box-shadow: 0 0px 0 rgb(80, 2, 2);/* Костиль для удаления тени после нажатия! */
+  transform: translateY(3px); /* Смещение вниз при нажатии */
+}
+
+/* FONT */
+
+.geist-pixel-title {
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
